@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DD54AC41C80A96700D0582A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AC31C80A96700D0582A /* AppDelegate.swift */; };
+		6DD54AC91C80A96700D0582A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD54AC71C80A96700D0582A /* Main.storyboard */; };
+		6DD54ACB1C80A96700D0582A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD54ACA1C80A96700D0582A /* Assets.xcassets */; };
+		6DD54ACE1C80A96700D0582A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD54ACC1C80A96700D0582A /* LaunchScreen.storyboard */; };
+		6DD54AD91C80A96700D0582A /* InterviewSignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AD81C80A96700D0582A /* InterviewSignUpTests.swift */; };
+		6DD54AE41C80A96700D0582A /* InterviewSignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AE31C80A96700D0582A /* InterviewSignUpUITests.swift */; };
+		6DD54AF41C80AA0600D0582A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DD54AD51C80A96700D0582A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD54AB81C80A96700D0582A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD54ABF1C80A96700D0582A;
+			remoteInfo = InterviewSignUp;
+		};
+		6DD54AE01C80A96700D0582A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD54AB81C80A96700D0582A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD54ABF1C80A96700D0582A;
+			remoteInfo = InterviewSignUp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DD54AC01C80A96700D0582A /* InterviewSignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewSignUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD54AC31C80A96700D0582A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DD54AC81C80A96700D0582A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DD54ACA1C80A96700D0582A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DD54ACD1C80A96700D0582A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DD54ACF1C80A96700D0582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD54AD41C80A96700D0582A /* InterviewSignUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewSignUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD54AD81C80A96700D0582A /* InterviewSignUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewSignUpTests.swift; sourceTree = "<group>"; };
+		6DD54ADA1C80A96700D0582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD54ADF1C80A96700D0582A /* InterviewSignUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterviewSignUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DD54AE31C80A96700D0582A /* InterviewSignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewSignUpUITests.swift; sourceTree = "<group>"; };
+		6DD54AE51C80A96700D0582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DD54ABD1C80A96700D0582A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD54AD11C80A96700D0582A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD54ADC1C80A96700D0582A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DD54AB71C80A96700D0582A = {
+			isa = PBXGroup;
+			children = (
+				6DD54AC21C80A96700D0582A /* InterviewSignUp */,
+				6DD54AD71C80A96700D0582A /* InterviewSignUpTests */,
+				6DD54AE21C80A96700D0582A /* InterviewSignUpUITests */,
+				6DD54AC11C80A96700D0582A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DD54AC11C80A96700D0582A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DD54AC01C80A96700D0582A /* InterviewSignUp.app */,
+				6DD54AD41C80A96700D0582A /* InterviewSignUpTests.xctest */,
+				6DD54ADF1C80A96700D0582A /* InterviewSignUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DD54AC21C80A96700D0582A /* InterviewSignUp */ = {
+			isa = PBXGroup;
+			children = (
+				6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */,
+				6DD54AC31C80A96700D0582A /* AppDelegate.swift */,
+				6DD54AC71C80A96700D0582A /* Main.storyboard */,
+				6DD54ACA1C80A96700D0582A /* Assets.xcassets */,
+				6DD54ACC1C80A96700D0582A /* LaunchScreen.storyboard */,
+				6DD54ACF1C80A96700D0582A /* Info.plist */,
+			);
+			path = InterviewSignUp;
+			sourceTree = "<group>";
+		};
+		6DD54AD71C80A96700D0582A /* InterviewSignUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DD54AD81C80A96700D0582A /* InterviewSignUpTests.swift */,
+				6DD54ADA1C80A96700D0582A /* Info.plist */,
+			);
+			path = InterviewSignUpTests;
+			sourceTree = "<group>";
+		};
+		6DD54AE21C80A96700D0582A /* InterviewSignUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6DD54AE31C80A96700D0582A /* InterviewSignUpUITests.swift */,
+				6DD54AE51C80A96700D0582A /* Info.plist */,
+			);
+			path = InterviewSignUpUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DD54ABF1C80A96700D0582A /* InterviewSignUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD54AE81C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUp" */;
+			buildPhases = (
+				6DD54ABC1C80A96700D0582A /* Sources */,
+				6DD54ABD1C80A96700D0582A /* Frameworks */,
+				6DD54ABE1C80A96700D0582A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InterviewSignUp;
+			productName = InterviewSignUp;
+			productReference = 6DD54AC01C80A96700D0582A /* InterviewSignUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DD54AD31C80A96700D0582A /* InterviewSignUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD54AEB1C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUpTests" */;
+			buildPhases = (
+				6DD54AD01C80A96700D0582A /* Sources */,
+				6DD54AD11C80A96700D0582A /* Frameworks */,
+				6DD54AD21C80A96700D0582A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DD54AD61C80A96700D0582A /* PBXTargetDependency */,
+			);
+			name = InterviewSignUpTests;
+			productName = InterviewSignUpTests;
+			productReference = 6DD54AD41C80A96700D0582A /* InterviewSignUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6DD54ADE1C80A96700D0582A /* InterviewSignUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DD54AEE1C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUpUITests" */;
+			buildPhases = (
+				6DD54ADB1C80A96700D0582A /* Sources */,
+				6DD54ADC1C80A96700D0582A /* Frameworks */,
+				6DD54ADD1C80A96700D0582A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DD54AE11C80A96700D0582A /* PBXTargetDependency */,
+			);
+			name = InterviewSignUpUITests;
+			productName = InterviewSignUpUITests;
+			productReference = 6DD54ADF1C80A96700D0582A /* InterviewSignUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DD54AB81C80A96700D0582A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Liuyuan \"Todd\" Tan";
+				TargetAttributes = {
+					6DD54ABF1C80A96700D0582A = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					6DD54AD31C80A96700D0582A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 6DD54ABF1C80A96700D0582A;
+					};
+					6DD54ADE1C80A96700D0582A = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 6DD54ABF1C80A96700D0582A;
+					};
+				};
+			};
+			buildConfigurationList = 6DD54ABB1C80A96700D0582A /* Build configuration list for PBXProject "InterviewSignUp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DD54AB71C80A96700D0582A;
+			productRefGroup = 6DD54AC11C80A96700D0582A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DD54ABF1C80A96700D0582A /* InterviewSignUp */,
+				6DD54AD31C80A96700D0582A /* InterviewSignUpTests */,
+				6DD54ADE1C80A96700D0582A /* InterviewSignUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DD54ABE1C80A96700D0582A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD54ACE1C80A96700D0582A /* LaunchScreen.storyboard in Resources */,
+				6DD54ACB1C80A96700D0582A /* Assets.xcassets in Resources */,
+				6DD54AC91C80A96700D0582A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD54AD21C80A96700D0582A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD54ADD1C80A96700D0582A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DD54ABC1C80A96700D0582A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD54AF41C80AA0600D0582A /* SignUpViewController.swift in Sources */,
+				6DD54AC41C80A96700D0582A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD54AD01C80A96700D0582A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD54AD91C80A96700D0582A /* InterviewSignUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DD54ADB1C80A96700D0582A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DD54AE41C80A96700D0582A /* InterviewSignUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DD54AD61C80A96700D0582A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD54ABF1C80A96700D0582A /* InterviewSignUp */;
+			targetProxy = 6DD54AD51C80A96700D0582A /* PBXContainerItemProxy */;
+		};
+		6DD54AE11C80A96700D0582A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD54ABF1C80A96700D0582A /* InterviewSignUp */;
+			targetProxy = 6DD54AE01C80A96700D0582A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DD54AC71C80A96700D0582A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DD54AC81C80A96700D0582A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DD54ACC1C80A96700D0582A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DD54ACD1C80A96700D0582A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DD54AE61C80A96700D0582A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DD54AE71C80A96700D0582A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DD54AE91C80A96700D0582A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterviewSignUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyuantan.InterviewSignUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DD54AEA1C80A96700D0582A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = InterviewSignUp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyuantan.InterviewSignUp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DD54AEC1C80A96700D0582A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InterviewSignUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyuantan.InterviewSignUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewSignUp.app/InterviewSignUp";
+			};
+			name = Debug;
+		};
+		6DD54AED1C80A96700D0582A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InterviewSignUpTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyuantan.InterviewSignUpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InterviewSignUp.app/InterviewSignUp";
+			};
+			name = Release;
+		};
+		6DD54AEF1C80A96700D0582A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InterviewSignUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyuantan.InterviewSignUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = InterviewSignUp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		6DD54AF01C80A96700D0582A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = InterviewSignUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.liuyuantan.InterviewSignUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = InterviewSignUp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DD54ABB1C80A96700D0582A /* Build configuration list for PBXProject "InterviewSignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD54AE61C80A96700D0582A /* Debug */,
+				6DD54AE71C80A96700D0582A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DD54AE81C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD54AE91C80A96700D0582A /* Debug */,
+				6DD54AEA1C80A96700D0582A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DD54AEB1C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD54AEC1C80A96700D0582A /* Debug */,
+				6DD54AED1C80A96700D0582A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DD54AEE1C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD54AEF1C80A96700D0582A /* Debug */,
+				6DD54AF01C80A96700D0582A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DD54AB81C80A96700D0582A /* Project object */;
+}
