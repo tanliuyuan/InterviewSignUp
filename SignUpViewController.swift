@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate{
     
     let screenSize: CGRect = UIScreen.mainScreen().bounds
     
@@ -17,6 +17,9 @@ class SignUpViewController: UIViewController {
 
         let signUpView = SignUpView(frame: screenSize)
         self.view.addSubview(signUpView)
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +29,11 @@ class SignUpViewController: UIViewController {
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return UIStatusBarStyle.LightContent
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
     }
 
 }
