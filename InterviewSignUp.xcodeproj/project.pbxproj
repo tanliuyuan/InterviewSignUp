@@ -14,6 +14,7 @@
 		6DD54AD91C80A96700D0582A /* InterviewSignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AD81C80A96700D0582A /* InterviewSignUpTests.swift */; };
 		6DD54AE41C80A96700D0582A /* InterviewSignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AE31C80A96700D0582A /* InterviewSignUpUITests.swift */; };
 		6DD54AF41C80AA0600D0582A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */; };
+		6DD54AF61C80B36F00D0582A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AF51C80B36F00D0582A /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6DD54AE31C80A96700D0582A /* InterviewSignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewSignUpUITests.swift; sourceTree = "<group>"; };
 		6DD54AE51C80A96700D0582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
+		6DD54AF51C80B36F00D0582A /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */,
+				6DD54AF51C80B36F00D0582A /* SignUpView.swift */,
 				6DD54AC31C80A96700D0582A /* AppDelegate.swift */,
 				6DD54AC71C80A96700D0582A /* Main.storyboard */,
 				6DD54ACA1C80A96700D0582A /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DD54AF41C80AA0600D0582A /* SignUpViewController.swift in Sources */,
+				6DD54AF61C80B36F00D0582A /* SignUpView.swift in Sources */,
 				6DD54AC41C80A96700D0582A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
