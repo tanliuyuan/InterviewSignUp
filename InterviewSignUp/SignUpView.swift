@@ -10,13 +10,20 @@ import UIKit
 
 class SignUpView: UIView {
     
+    var wingLabel = UILabel()
+    var firstNameField = UITextField()
+    var lastNameField = UITextField()
+    var emailField = UITextField()
+    var passwordField = UITextField()
+    var signUpButton = UIButton()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         // The background
         self.backgroundColor = UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)
         
         // The "Wing" label
-        let wingLabel = UILabel(frame: CGRectMake((frame.width * 0.35), (frame.height * 0.133), (frame.width * 0.3), (frame.height * 0.125)))
+        wingLabel = UILabel(frame: CGRectMake((frame.width * 0.35), (frame.height * 0.133), (frame.width * 0.3), (frame.height * 0.125)))
         wingLabel.text = "wing"
         wingLabel.textAlignment = NSTextAlignment.Center
         wingLabel.font = UIFont.systemFontOfSize(frame.width / 7)
@@ -24,39 +31,23 @@ class SignUpView: UIView {
         self.addSubview(wingLabel)
         
         // First name
-        let firstNameField = UITextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.433), (frame.width * 0.77), (frame.height * 0.061)))
-        firstNameField.backgroundColor = UIColor.whiteColor()
-        firstNameField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
-        firstNameField.attributedPlaceholder = NSAttributedString(string:"First name",
-            attributes:[NSForegroundColorAttributeName: UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)])
+        firstNameField = SignUpTextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.433), (frame.width * 0.77), (frame.height * 0.061)), placeHolder: "First name", keyboardType: UIKeyboardType.Default, isSensitive: false)
         self.addSubview(firstNameField)
         
         // Last name
-        let lastNameField = UITextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.507), (frame.width * 0.77), (frame.height * 0.061)))
-        lastNameField.backgroundColor = UIColor.whiteColor()
-        lastNameField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
-        lastNameField.attributedPlaceholder = NSAttributedString(string:"Last name",
-            attributes:[NSForegroundColorAttributeName: UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)])
+        lastNameField = SignUpTextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.507), (frame.width * 0.77), (frame.height * 0.061)), placeHolder: "Last name", keyboardType: UIKeyboardType.Default, isSensitive: false)
         self.addSubview(lastNameField)
         
         // Email
-        let emailField = UITextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.585), (frame.width * 0.77), (frame.height * 0.061)))
-        emailField.backgroundColor = UIColor.whiteColor()
-        emailField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
-        emailField.attributedPlaceholder = NSAttributedString(string:"Email",
-            attributes:[NSForegroundColorAttributeName: UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)])
+        emailField = SignUpTextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.585), (frame.width * 0.77), (frame.height * 0.061)), placeHolder: "Email", keyboardType: UIKeyboardType.EmailAddress, isSensitive: false)
         self.addSubview(emailField)
         
         // Password
-        let passwordField = UITextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.660), (frame.width * 0.77), (frame.height * 0.061)))
-        passwordField.backgroundColor = UIColor.whiteColor()
-        passwordField.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
-        passwordField.attributedPlaceholder = NSAttributedString(string:"Password",
-            attributes:[NSForegroundColorAttributeName: UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)])
+        passwordField = SignUpTextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.660), (frame.width * 0.77), (frame.height * 0.061)), placeHolder: "Password", keyboardType: UIKeyboardType.Default, isSensitive: true)
         self.addSubview(passwordField)
         
         // "SIGN UP" button
-        let signUpButton = UIButton(frame: CGRectMake((frame.width * 0.335), (frame.height * 0.841), (frame.width * 0.330), (frame.height * 0.121)))
+        signUpButton = UIButton(frame: CGRectMake((frame.width * 0.335), (frame.height * 0.841), (frame.width * 0.330), (frame.height * 0.121)))
         signUpButton.backgroundColor = UIColor(red:0.0, green:0.69, blue:0.81, alpha:1.0)
         signUpButton.setTitle("SIGN UP", forState: .Normal)
         signUpButton.setTitleColor(UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0), forState: .Normal)

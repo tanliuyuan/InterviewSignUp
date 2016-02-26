@@ -14,6 +14,7 @@
 		6DD54AE41C80A96700D0582A /* InterviewSignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AE31C80A96700D0582A /* InterviewSignUpUITests.swift */; };
 		6DD54AF41C80AA0600D0582A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */; };
 		6DD54AF61C80B36F00D0582A /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AF51C80B36F00D0582A /* SignUpView.swift */; };
+		6DD54AF81C80F23900D0582A /* SignUpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD54AF71C80F23900D0582A /* SignUpTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6DD54AE51C80A96700D0582A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		6DD54AF51C80B36F00D0582A /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		6DD54AF71C80F23900D0582A /* SignUpTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				6DD54AF31C80AA0600D0582A /* SignUpViewController.swift */,
 				6DD54AF51C80B36F00D0582A /* SignUpView.swift */,
+				6DD54AF71C80F23900D0582A /* SignUpTextField.swift */,
 				6DD54AC31C80A96700D0582A /* AppDelegate.swift */,
 				6DD54ACA1C80A96700D0582A /* Assets.xcassets */,
 				6DD54ACC1C80A96700D0582A /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 				6DD54AF41C80AA0600D0582A /* SignUpViewController.swift in Sources */,
 				6DD54AF61C80B36F00D0582A /* SignUpView.swift in Sources */,
 				6DD54AC41C80A96700D0582A /* AppDelegate.swift in Sources */,
+				6DD54AF81C80F23900D0582A /* SignUpTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +480,7 @@
 				6DD54AEA1C80A96700D0582A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DD54AEB1C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUpTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +489,7 @@
 				6DD54AED1C80A96700D0582A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DD54AEE1C80A96700D0582A /* Build configuration list for PBXNativeTarget "InterviewSignUpUITests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +498,7 @@
 				6DD54AF01C80A96700D0582A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
