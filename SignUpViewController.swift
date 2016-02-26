@@ -10,10 +10,13 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    let screenSize: CGRect = UIScreen.mainScreen().bounds
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let signUpView = SignUpView(frame: screenSize)
+        self.view.addSubview(signUpView)
     }
 
     override func didReceiveMemoryWarning() {
