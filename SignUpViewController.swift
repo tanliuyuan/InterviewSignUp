@@ -35,6 +35,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         return UIStatusBarStyle.LightContent
     }
     
+    // Add observers for keyboard events
     override func viewWillAppear(animated:Bool) {
         super.viewWillAppear(animated)
         
@@ -42,6 +43,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("keyboardWillHide:"), name: UIKeyboardWillHideNotification, object: nil)
     }
     
+    // Move the view to make room for keyboard
     func keyboardWillShow(notification: NSNotification) {
         if let userInfo = notification.userInfo {
             if let keyboardSize =  (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.CGRectValue() {
@@ -57,22 +59,27 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         }
     }
     
+    // Move the view back when keyboard is dismissed
     func keyboardWillHide(notification: NSNotification) {
         self.moveTextField(Float(keyboardHeight))
         keyboardHeight = CGFloat()
     }
     
+    // Remove observers for keyboard events
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
+        
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UIKeyboardWillHideNotification, object: nil)
     }
     
+    // Dismiss keyboard when return key is hit
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
+    // Dismiss keyboard when user touches empty spaces
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.view.endEditing(true)
     }
