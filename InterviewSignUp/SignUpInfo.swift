@@ -40,9 +40,9 @@ func sha256(data : NSData) -> String {
 
 // Random salt generator
 func generateRandomSalt() -> String {
-    let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    let letters : NSString = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
     let randomString : NSMutableString = NSMutableString(capacity: 8)
-    for (var i = 0; i < 8; i++){
+    for _ in 1...8{
         let length = UInt32 (letters.length)
         let rand = arc4random_uniform(length)
         randomString.appendFormat("%C", letters.characterAtIndex(Int(rand)))

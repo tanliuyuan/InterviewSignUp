@@ -93,12 +93,31 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
     }
 
     func signUp(sender: UIButton) {
-        
+        // Dismiss the keyboard
+        self.view.endEditing(true)
         // Parse the text inputs and wrap the data into JSON format
         if let firstName = signUpView.firstNameField.text {
+            if firstName.isEmpty {
+                showAlert("Please enter your first name!")
+                return
+            }
             if let lastName = signUpView.lastNameField.text {
+                if lastName.isEmpty {
+                    showAlert("Please enter your last name!")
+                    return
+                }
                 if let email = signUpView.emailField.text {
+                    let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+                    if !validate(emailRegEx, testString: email) {
+                        showAlert("Please enter a valid email address!")
+                        return
+                    }
                     if let password = signUpView.passwordField.text{
+                        let passwordRegEx = "^(?=.*[\\d])(?=.*[a-z]).{6,18}$"
+                        if !validate(passwordRegEx, testString: password) {
+                            showAlert("Please enter a valid password! A valid password has to be 6-18 characters long, with at least one digit and one letter.")
+                            return
+                        }
                         let signUpInfo = SignUpInfo(firstName: firstName, lastName: lastName, email: email, password: password).getInfo()
                         do {
                             let signUpInfoJSON = try NSJSONSerialization.dataWithJSONObject(signUpInfo, options: [])
@@ -108,13 +127,27 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
                                 /***************************************************************************************/
                                 /***** At this point, the JSON formatted data can be easily sent to an outside API *****/
                                 /***************************************************************************************/
+                                return
                             }
                         } catch let error as NSError {
                             print("JSON Serialization error: \(error.description)")
+                            return
                         }
                     }
                 }
             }
         }
+        return
+    }
+    
+    func validate(pattern: String, testString: String) -> Bool {
+        let emailValidator = NSPredicate(format:"SELF MATCHES %@", pattern)
+        return emailValidator.evaluateWithObject(testString)
+    }
+    
+    func showAlert(withMessage: String) {
+        let alert = UIAlertController(title: "Error", message: withMessage, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
     }
 }

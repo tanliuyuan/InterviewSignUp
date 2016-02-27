@@ -41,6 +41,7 @@ class SignUpView: UIView {
         
         // Email
         emailField = SignUpTextField(frame: CGRectMake((frame.width * 0.115), (frame.height * 0.585), (frame.width * 0.77), (frame.height * 0.061)), placeHolder: "Email", keyboardType: UIKeyboardType.EmailAddress, isSensitive: false)
+        emailField.autocapitalizationType = .None
         self.addSubview(emailField)
         
         // Password
