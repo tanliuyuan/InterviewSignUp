@@ -10,14 +10,13 @@ import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate{
     
-    let screenSize: CGRect = UIScreen.mainScreen().bounds
+    let signUpView = SignUpView(frame: UIScreen.mainScreen().bounds)
     var keyboardHeight: CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Add signUpView
-        let signUpView = SignUpView(frame: screenSize)
         self.view.addSubview(signUpView)
         
         // Set the delegate of all textfields to the controller itself

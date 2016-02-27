@@ -19,6 +19,7 @@ class SignUpView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         // The background
         self.backgroundColor = UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)
         
@@ -51,6 +52,7 @@ class SignUpView: UIView {
         signUpButton.backgroundColor = UIColor(red:0.0, green:0.69, blue:0.81, alpha:1.0)
         signUpButton.setTitle("SIGN UP", forState: .Normal)
         signUpButton.setTitleColor(UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0), forState: .Normal)
+        signUpButton.setTitleColor(UIColor(red:0.08, green:0.50, blue:0.70, alpha:1.0), forState: .Highlighted)
         signUpButton.layer.cornerRadius = signUpButton.frame.height / 2
         self.addSubview(signUpButton)
     }
