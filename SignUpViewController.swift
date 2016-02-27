@@ -98,24 +98,24 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         // Parse the text inputs and wrap the data into JSON format
         if let firstName = signUpView.firstNameField.text {
             if firstName.isEmpty {
-                showAlert("Please enter your first name!")
+                showAlert("Error", withMessage: "Please enter your first name!")
                 return
             }
             if let lastName = signUpView.lastNameField.text {
                 if lastName.isEmpty {
-                    showAlert("Please enter your last name!")
+                    showAlert("Error", withMessage: "Please enter your last name!")
                     return
                 }
                 if let email = signUpView.emailField.text {
                     let emailRegEx = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
                     if !validate(emailRegEx, testString: email) {
-                        showAlert("Please enter a valid email address!")
+                        showAlert("Error", withMessage: "Please enter a valid email address!")
                         return
                     }
                     if let password = signUpView.passwordField.text{
                         let passwordRegEx = "^(?=.*[\\d])(?=.*[a-z]).{6,18}$"
                         if !validate(passwordRegEx, testString: password) {
-                            showAlert("Please enter a valid password! A valid password has to be 6-18 characters long, with at least one digit and one letter.")
+                            showAlert("Error", withMessage: "Please enter a valid password! A valid password has to be 6-18 characters long, with at least one digit and one letter.")
                             return
                         }
                         let signUpInfo = SignUpInfo(firstName: firstName, lastName: lastName, email: email, password: password).getInfo()
@@ -124,6 +124,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
                             if let signUpInfoJSONString = NSString(data: signUpInfoJSON, encoding: NSUTF8StringEncoding) {
                                 // Check console for JSON string output.
                                 print(signUpInfoJSONString)
+                                showAlert("Congratulations", withMessage: "Sign up successful. Please check the XCode console output for JSON data.")
                                 /***************************************************************************************/
                                 /***** At this point, the JSON formatted data can be easily sent to an outside API *****/
                                 /***************************************************************************************/
@@ -145,8 +146,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         return emailValidator.evaluateWithObject(testString)
     }
     
-    func showAlert(withMessage: String) {
-        let alert = UIAlertController(title: "Error", message: withMessage, preferredStyle: UIAlertControllerStyle.Alert)
+    func showAlert(withTitle: String, withMessage: String) {
+        let alert = UIAlertController(title: withTitle, message: withMessage, preferredStyle: UIAlertControllerStyle.Alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.Default, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
     }
