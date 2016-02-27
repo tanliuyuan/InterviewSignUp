@@ -24,6 +24,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         signUpView.lastNameField.delegate = self
         signUpView.emailField.delegate = self
         signUpView.passwordField.delegate = self
+        
+        // Set up action when signUpButton is pressed
+        signUpView.signUpButton.addTarget(self, action: "signUp:", forControlEvents: .TouchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,5 +92,29 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         })
     }
 
-
+    func signUp(sender: UIButton) {
+        
+        // Parse the text inputs and wrap the data into JSON format
+        if let firstName = signUpView.firstNameField.text {
+            if let lastName = signUpView.lastNameField.text {
+                if let email = signUpView.emailField.text {
+                    if let password = signUpView.passwordField.text{
+                        let signUpInfo = SignUpInfo(firstName: firstName, lastName: lastName, email: email, password: password).getInfo()
+                        do {
+                            let signUpInfoJSON = try NSJSONSerialization.dataWithJSONObject(signUpInfo, options: [])
+                            if let signUpInfoJSONString = NSString(data: signUpInfoJSON, encoding: NSUTF8StringEncoding) {
+                                // Check console for JSON string output.
+                                print(signUpInfoJSONString)
+                                /***************************************************************************************/
+                                /***** At this point, the JSON formatted data can be easily sent to an outside API *****/
+                                /***************************************************************************************/
+                            }
+                        } catch let error as NSError {
+                            print("JSON Serialization error: \(error.description)")
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
