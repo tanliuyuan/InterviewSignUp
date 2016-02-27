@@ -16,6 +16,7 @@ class SignUpTextField: UITextField {
         self.layer.sublayerTransform = CATransform3DMakeTranslation(10, 0, 0)
         self.attributedPlaceholder = NSAttributedString(string: placeHolder,
             attributes:[NSForegroundColorAttributeName: UIColor(red:0.08, green:0.14, blue:0.22, alpha:1.0)])
+        self.autocorrectionType = .No
         self.keyboardType = keyboardType
         self.secureTextEntry = isSensitive
     }
